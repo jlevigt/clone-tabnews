@@ -9,7 +9,7 @@ async function query(queryObject) {
     password: process.env.POSTGRES_PASSWORD,
   });
   await client.connect();
-  //try catch e finaly
+
   try {
     const result = await client.query(queryObject);
     return result;
