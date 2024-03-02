@@ -1,59 +1,41 @@
-// index.js
-
 import React from "react";
 
 function Home() {
   return (
-    <div className="container">
-      <h1>
-        Vai ouvir{" "}
-        <a
-          href="https://music.youtube.com/watch?v=z_VnfSWLBbk&si=UzYO88adeJdNQ4A1"
-          target="_blank"
-          rel="external"
-        >
-          CASTELO TRISTE
-        </a>
-      </h1>
+    <div>
+      <title> Site </title>
+      <h1>Organização dos PGs</h1>
+      <p>Esta é a página 1 do site.</p>
+      <button className="meu-botao">Clique aqui</button>
       <style jsx global>{`
         body {
           margin: 0;
           padding: 0;
         }
 
-        .container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          min-height: 100vh;
+        .meu-botao {
+          position: absolute;
+          top: 20px;
+          right: 20px;
           background-color: black;
           color: white;
-          font-family: "Arial", sans-serif;
-          font-weight: bold;
-          text-align: center;
-          margin: 0;
-          padding: 0;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 20px;
+          cursor: pointer;
+          font-family: inherit;
+          font-weight: 600;
+        }
+        .meu-botao:hover {
+          background-color: gray;
         }
 
         h1 {
           font-size: 24px; /* Tamanho da tipografia */
         }
-
-        a {
-          color: white;
-          text-decoration: underline;
-        }
       `}</style>
     </div>
   );
-}
-
-function teste() {
-  console.log("teste");
-}
-
-function teste2() {
-  console.log("teste2");
 }
 
 export default Home;
